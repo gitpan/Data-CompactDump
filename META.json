@@ -29,7 +29,14 @@
          "requires" : {
             "Exporter" : "0",
             "base" : "0",
+            "perl" : "5.012",
             "strict" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0",
+            "warnings" : "0"
          }
       }
    },
@@ -41,6 +48,6 @@
          "web" : "https://github.com/milsorm/data-compactdump"
       }
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }
 

@@ -1,6 +1,7 @@
-package Data::CompactDump 0.03;
+use 5.012; #package NAME VERSION
+package Data::CompactDump 0.04;
 # ABSTRACT: Perl extension for dumping xD structures in compact form
-$Data::CompactDump::VERSION = '0.03';
+$Data::CompactDump::VERSION = '0.04';
 
 use strict;
 use base 'Exporter';
@@ -42,14 +43,14 @@ Data::CompactDump - Perl extension for dumping xD structures in compact form
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
 	use Data::CompactDump qw/compact/;
 
-	my @xd_structure = [ [ 1, 2 ], [ 3, [ 4, 5 ] ] ];
-	my $dump = compact( @xd_structure );
+	my $xd_structure = [ [ 1, 2 ], [ 3, [ 4, 5 ] ] ];
+	my $dump = compact( $xd_structure );
 
 =head1 DESCRIPTION
 
@@ -63,8 +64,8 @@ L<Data::Dumper>) but in compact form.
 Make eval-compatible form of xD structure for saving and restoring data
 (compact form)
 
-	my @xd_structure = [ [ 1, 2 ], [ 3, [ 4, 5 ] ] ];
-	my $dump = compact(@xd_structure);
+	my $xd_structure = [ [ 1, 2 ], [ 3, [ 4, 5 ] ] ];
+	my $dump = compact($xd_structure);
 
 =head1 SEE ALSO
 

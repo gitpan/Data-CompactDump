@@ -4,6 +4,8 @@ author:
   - 'Milan Sorm <sorm@is4u.cz>'
 build_requires:
   Module::Build: 0.3601
+  Test::More: 0
+  warnings: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
   Module::Build: 0.3601
@@ -17,7 +19,8 @@ name: Data-CompactDump
 requires:
   Exporter: 0
   base: 0
+  perl: 5.012
   strict: 0
 resources:
   repository: https://github.com/milsorm/data-compactdump.git
-version: 0.03
+version: 0.04

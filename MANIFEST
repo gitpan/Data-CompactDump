@@ -9,3 +9,4 @@ README
 README.md
 dist.ini
 lib/Data/CompactDump.pm
+t/test.t

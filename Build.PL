@@ -19,7 +19,7 @@ my %module_build_args = (
     "Milan Sorm <sorm\@is4u.cz>"
   ],
   "dist_name" => "Data-CompactDump",
-  "dist_version" => "0.03",
+  "dist_version" => "0.04",
   "license" => "perl",
   "module_name" => "Data::CompactDump",
   "recommends" => {},
@@ -27,15 +27,21 @@ my %module_build_args = (
   "requires" => {
     "Exporter" => 0,
     "base" => 0,
+    "perl" => "5.012",
     "strict" => 0
   },
   "script_files" => [],
-  "test_requires" => {}
+  "test_requires" => {
+    "Test::More" => 0,
+    "warnings" => 0
+  }
 );
 
 
 my %fallback_build_requires = (
-  "Module::Build" => "0.3601"
+  "Module::Build" => "0.3601",
+  "Test::More" => 0,
+  "warnings" => 0
 );
 
 
